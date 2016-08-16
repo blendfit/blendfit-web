@@ -1,8 +1,10 @@
 .main-screen-container
+  max-width: 375px
   width: 100%
   position: absolute
   box-sizing: border-box
   padding: 20px
+  color: white
 
 .top-header
   display: inline-block
@@ -10,5 +12,29 @@
   justify-content: space-between
   align-items: flex-end
 
+  .logo
+    width: 190px
+
   .how-it-works
-    font-size: 16px
+    font-size: 20px
+
+.mission-statement
+  margin-top: 120px
+  h2
+    margin: 10px 0
+    line-height: 1.4
+    font-size: 48px
+    background-color: rgba(255, 255, 255, 0.2)
+    backdrop-filter: blur(2px)
+
+.main-screen-footer
+  text-align: center
+  margin-top: 50px
+  input[type='button']
+    padding: 15px 30px
+    color: white
+    background: $blendfit-blue
+    border: 0
+    border-radius: 3px
+  p
+    margin-top: 10px

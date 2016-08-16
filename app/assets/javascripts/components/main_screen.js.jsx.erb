@@ -3,9 +3,21 @@ var MainScreen = React.createClass({
     return (
       <div className='main-screen-container'>
         <header className='top-header'>
-          <img src={"<%= asset_url('logo.png')%>"} />
+          <img className='logo' src={"<%= asset_url('logo@3x.png')%>"} />
           <p className='how-it-works underline'> How it works </p>
         </header>
+
+        <section className='mission-statement'>
+          <h2>Freshly blended</h2>
+          <h2>protein smoothies</h2>
+          <h2>delivered</h2>
+          <h2>in <span className='underline-heavy'>15 minutes</span>.</h2>
+        </section>
+
+        <footer className='main-screen-footer'>
+          <input type="button" name="name" value="SEE TODAY’S MENU" />
+          <p>We’re open 6am - 11pm daily</p>
+        </footer>
       </div>
     );
   }
